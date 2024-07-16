@@ -12,6 +12,9 @@
 .flex{
     display: flex;
 }
+.grid{
+    display: grid;
+}
 .btn-primary{
     font-size: 20px;
     font-weight: bold;
@@ -73,4 +76,16 @@ header, main{
     font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+/* Brands styles */
+.brands{
+    margin: 50px auto;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
 }
