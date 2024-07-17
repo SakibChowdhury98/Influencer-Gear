@@ -4,8 +4,13 @@
 /* GLobal Style */
 *{
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+.text-center{
+    text-align: center;
+}
 :root{
     --primary-color: #3a3a3a;
 }
@@ -23,14 +28,18 @@
     border: none;
     border-radius: 40px;
     padding: 10px 25px;
+    margin-top: 30px;
 
+}
+section{
+    margin: 100px auto;
 }
 
 
 /* Header Style */
 header, main{
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 .navbar{
     justify-content: space-between;
@@ -67,7 +76,8 @@ header, main{
     background-repeat: no-repeat;
 }
 .section-title{
-    font-size: 52px;
+    font-size: 38px;
+    margin-bottom: 20px;
     font-weight: bold;
     color: var(--primary-color);
 }
@@ -79,6 +89,9 @@ header, main{
 }
 
 /* Brands styles */
+.brand-list{
+    margin: 50px auto;
+}
 .brands{
     margin: 50px auto;
     grid-template-columns: repeat(7, 1fr);
@@ -88,4 +101,83 @@ header, main{
     height: 1px;
     width: 100%;
     background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
+
+/* popular-collection */
+.cards-container{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+
+.cards{
+    width: 100%;
+    background-color: rgb(255, 252, 241);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);;
+}
+.item-name{
+    font-size: 28px;
+    font-weight: 600;
+    color: #18191F;
+}
+
+.item-price{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.item-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #787885;
+}
+.card img{
+    height: 250px;
+    width: 100%;
+}
+
+
+/* feature collection */
+.feature{
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* footer */
+footer{
+    background-color: #0A0826;
+    padding: 50px;
+}
+.footer-content{
+    max-width: 300px;
+    margin: 0px auto;
+}
+.footer-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-description{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.social-icons{
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.social-icons>img{
+    height: 20px;
+    width: 20px;
 }
